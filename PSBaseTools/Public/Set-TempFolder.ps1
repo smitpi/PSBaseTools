@@ -50,7 +50,7 @@ Set-TempFolder
 
 #>
 function Set-TempFolder {
-	[Cmdletbinding(HelpURI = 'https://smitpi.github.io/PSToolKit/Set-TempFolder')]
+	[Cmdletbinding(HelpURI = 'https://smitpi.github.io/PSBaseTools/Set-TempFolder')]
 	PARAM()
 
 	Write-Host 'Setting temp folder: ' -ForegroundColor Cyan -NoNewline

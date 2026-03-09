@@ -54,7 +54,7 @@ Show-ObjectPropertiesAsCSV -data $data
 
 #>
 function Show-ObjectPropertiesAsCSV {
-    [Cmdletbinding(HelpURI = 'https://smitpi.github.io/PSToolKit/Show-ObjectPropertiesAsCSV')]
+    [Cmdletbinding(HelpURI = 'https://smitpi.github.io/PSBaseTools/Show-ObjectPropertiesAsCSV')]
 
     param (
         [parameter( ValueFromPipeline = $True )]

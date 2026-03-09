@@ -53,18 +53,18 @@ The Object to Report on.
 Get-PSObject (get-item .)
 
 #>
-Function Get-PSObject {
-	[Cmdletbinding(HelpURI = 'https://smitpi.github.io/PSToolKit/Get-PSObject')]
+function Get-PSObject {
+	[Cmdletbinding(HelpURI = 'https://smitpi.github.io/PSBaseTools/Get-PSObject')]
 	[OutputType([System.Object[]])]
-	Param (
+	param (
 		[parameter( ValueFromPipeline = $True )]
 		[object[]]$Data)
 	begin {
 		[System.Collections.generic.List[PSObject]]$ReturnObject = @()
 	}
 
-	Process {
-		ForEach ( $Object in $Data ) {
+	process {
+		foreach ( $Object in $Data ) {
 			$ReturnObject.Add([PSCustomObject]@{
 					Object     = $Object.psobject.BaseObject
 					Members    = $Object.psobject.Members | Select-Object Name, MemberType, TypeNameOfValue, Value

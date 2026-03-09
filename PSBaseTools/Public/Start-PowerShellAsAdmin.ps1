@@ -62,7 +62,7 @@ An example
 General notes
 #>
 Function Start-PowerShellAsAdmin {
-	[Cmdletbinding(SupportsShouldProcess = $true, HelpURI = 'https://smitpi.github.io/PSToolKit/Start-PowerShellAsAdmin')]
+	[Cmdletbinding(SupportsShouldProcess = $true, HelpURI = 'https://smitpi.github.io/PSBaseTools/Start-PowerShellAsAdmin')]
 	[OutputType([void])]
 	PARAM(
 		[switch]$WindowsPowerShell,

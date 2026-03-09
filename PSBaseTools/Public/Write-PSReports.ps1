@@ -81,7 +81,7 @@ Write-PSReports -InputObject $report -ReportTitle 'Windows Events' -Export All -
 
 #>
 function Write-PSReports {
-	[CmdletBinding(HelpURI = 'https://smitpi.github.io/PSToolKit/Write-PSReports')]
+	[CmdletBinding(HelpURI = 'https://smitpi.github.io/PSBaseTools/Write-PSReports')]
 	[OutputType([System.Object[]])]
 	param(
 		[Parameter(Position = 0, Mandatory)]

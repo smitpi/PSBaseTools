@@ -68,7 +68,7 @@ Update-PSDefaultParameter -Function Connect-VMWareCluster -Parameter vCenterIp -
 
 #>
 Function Update-PSDefaultParameter {
-	[Cmdletbinding(DefaultParameterSetName = 'Set1', HelpURI = 'https://smitpi.github.io/PSToolKit/Update-PSDefaultParameter')]
+	[Cmdletbinding(DefaultParameterSetName = 'Set1', HelpURI = 'https://smitpi.github.io/PSBaseTools/Update-PSDefaultParameter')]
 	[OutputType([System.Object[]])]
 	PARAM(
 		[string]$Function,
